@@ -6,7 +6,7 @@
 </head>
 <body>
 <b><font color="blue" size=5>
-Senhas apenas no formato Crypt-Password, mínimo 6 caracteres com letra maiúscula, minúscula e numero.
+Passwords only in Crypt-Password format, minimum 6 characters with uppercase, lowercase and number.
 <b></font size=5>
     <form name="frmChange" role="form" class="form-signin" method="POST" action="backand-change-password-user-radius.php">
 
