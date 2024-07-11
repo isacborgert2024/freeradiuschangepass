@@ -19,10 +19,10 @@ $msg = '';
 
 try {
         if (strposa($curPassword, $find_letters) == true || strposa($newPassword, $find_letters) == true || strposa($confirmPass, $find_letters) == true)
-                throw new Exception("Sua senha não pode conter aspas simples, duplas, *, %, [], {}");
+                throw new Exception("Your password cannot contain single or double quotes, *, %, [], {}");
 
         if (!senhaValida($newPassword))
-                throw new Exception($msg = "Senha muito fraca");
+                throw new Exception($msg = "Password too weak");
 
         $dbPassword = mysqli_query($dbcon, "select username,value from radcheck where username = '$username'");
         $dbPassword = mysqli_fetch_assoc($dbPassword);
